@@ -156,12 +156,13 @@
         "description": "The DNS Prefix for the SharePoint Public IP Address"
       }
     },
-     "baseUrl": {
+    "baseUrl": {
       "type": "string",
       "metadata": {
         "artifactsBaseUrl": "",
         "description": "URL to acquire other templates"
-      }
+      },
+      "defaultValue": "https://github.com/jjzgithub/AzureQS/tree/master/USARC/SP2013.3VM/SP2013.3VM"
     },
     "spPublicIPNewOrExisting": {
       "type": "string",

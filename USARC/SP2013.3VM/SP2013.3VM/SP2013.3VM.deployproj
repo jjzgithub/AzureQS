@@ -27,7 +27,6 @@
   <ItemGroup>
     <Content Include="configuringSharepoint.json" />
     <Content Include="configuringSQL.json" />
-    <Content Include="azuredeploy.parameters.json" />
     <Content Include="azuredeploy.json" />
     <Content Include="availabilitySets.json" />
     <Content Include="creatingNICS.json" />
