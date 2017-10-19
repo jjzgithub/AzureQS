@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "spadmin"
+    },
+    "spDNSPrefix": {
+      "value": "usarc-sp2013"
+    },
+    "sppublicIPAddressName": {
+      "value": "usarcsp2013"
+    },
+    "storageAccountNamePrefix": {
+      "value": "usarcsp2013"
+    },
+    "adminPassword": {
+      "value": "P@ssw0rd1234"
+    },
+    "sqlServerServiceAccountPassword": {
+      "value": "P@ssw0rd1234"
+    },
+    "sharePointSetupUserAccountPassword": {
+      "value": "P@ssw0rd1234"
+    },
+    "sharePointFarmAccountPassword": {
+      "value": "P@ssw0rd1234"
+    },
+    "sharePointFarmPassphrasePassword": {
+      "value": "P@ssw0rd1234"
+    },
+    "storageAccountType": {
+      "value": "Standard_LRS"
+    }
+  }
+}

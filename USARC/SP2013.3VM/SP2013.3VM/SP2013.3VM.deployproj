@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>a2895626-77f1-49fe-a98d-2dc02ac2d12c</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkIdentifier>Deployment</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>1.0</TargetFrameworkVersion>
+    <PrepareForBuildDependsOn>
+    </PrepareForBuildDependsOn>
+  </PropertyGroup>
+  <Import Condition=" Exists('Deployment.targets') " Project="Deployment.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- vertag<:>start tokens<:>maj.min -->
+  <Import Condition=" Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets') " Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets" />
+  <!-- vertag<:>end -->
+  <ItemGroup>
+    <Content Include="configuringSharepoint.json" />
+    <Content Include="configuringSQL.json" />
+    <Content Include="azuredeploy.parameters.json" />
+    <Content Include="azuredeploy.json" />
+    <Content Include="availabilitySets.json" />
+    <Content Include="creatingNICS.json" />
+    <Content Include="creatingPublicIPs.json" />
+    <None Include="Deployment.targets">
+      <Visible>False</Visible>
+    </None>
+    <Content Include="Deploy-AzureResourceGroup.ps1" />
+    <Content Include="provisioningSQL.json" />
+    <Content Include="provisioningSharepoint.json" />
+    <Content Include="provisioningDomainController.json" />
+    <Content Include="mainTemplate.json" />
+    <Content Include="README.md" />
+    <Content Include="dsc\ConfigureSharePointServer.ps1.zip" />
+    <Content Include="dsc\ConfigureSqlServer.ps1.zip" />
+    <Content Include="dsc\CreateADPDC.ps1.zip" />
+    <Content Include="dsc\PrepareSharePointServer.ps1.zip" />
+    <Content Include="dsc\PrepareSqlServer.ps1.zip" />
+    <Content Include="loadBalancers.json" />
+    <Content Include="publicip-existing.json" />
+    <Content Include="publicip-new.json" />
+    <Content Include="storageAccount.json" />
+    <Content Include="vnet-new.json" />
+    <Content Include="vnet-with-dns-server.json" />
+  </ItemGroup>
+  <Target Name="GetReferenceAssemblyPaths" />
+</Project>
