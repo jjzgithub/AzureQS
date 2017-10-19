@@ -162,7 +162,7 @@
         "artifactsBaseUrl": "",
         "description": "URL to acquire other templates"
       },
-      "defaultValue": "https://github.com/jjzgithub/AzureQS/tree/master/USARC/SP2013.3VM/SP2013.3VM"
+      "defaultValue":  "https://raw.githubusercontent.com/jjzgithub/AzureQS/master/USARC/SP2013.3VM/SP2013.3VM"
     },
     "spPublicIPNewOrExisting": {
       "type": "string",

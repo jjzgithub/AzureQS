@@ -31,6 +31,7 @@
     <Content Include="availabilitySets.json" />
     <Content Include="creatingNICS.json" />
     <Content Include="creatingPublicIPs.json" />
+    <None Include="azuredeploy.parameters.json" />
     <None Include="Deployment.targets">
       <Visible>False</Visible>
     </None>
